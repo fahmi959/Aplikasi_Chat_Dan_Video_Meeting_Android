@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "287843660404",
+    "firebase_url": "https://aplikasi-fahmi-chat-default-rtdb.firebaseio.com",
+    "project_id": "aplikasi-fahmi-chat",
+    "storage_bucket": "aplikasi-fahmi-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287843660404:android:2ae2512774f98b185ad721",
+        "android_client_info": {
+          "package_name": "com.capstonebangkit.aplikasi_fahmi_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287843660404-3m1s45lfp4cva4g8emqb4kjne4l4ehbv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capstonebangkit.aplikasi_fahmi_chat",
+            "certificate_hash": "68f2cf4b2bac562c2ae3d9d1c0ff4bbb2c3729a8"
+          }
+        },
+        {
+          "client_id": "287843660404-2e7t2be10ts85vfj8rjahtccs6h1btf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLAx6Nhit0ul8OFDoKF2Z2sK87F_hPw9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287843660404-2e7t2be10ts85vfj8rjahtccs6h1btf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

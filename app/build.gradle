@@ -1,0 +1,110 @@
+
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
+
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
+android {
+    namespace 'com.capstonebangkit.aplikasi_fahmi_chat'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.capstonebangkit.aplikasi_fahmi_chat"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // Enable custom BuildConfig fields
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        debug{
+            buildConfigField("String", "AUTH_TOKEN", "\"" + localProperties['auth_token'] + "\"")
+            buildConfigField("String", "AUTH_URL", "\"" + localProperties['auth_url'] + "\"")
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField("String", "AUTH_TOKEN", "\"" + localProperties['auth_token'] + "\"")
+            buildConfigField("String", "AUTH_URL", "\"" + "\"")
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    viewBinding {
+        enabled = true
+    }
+
+
+}
+
+
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    // FIREBASE
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.2'
+    implementation 'com.firebaseui:firebase-ui-database:8.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.1.2'
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.5'
+    implementation platform('com.google.firebase:firebase-bom:30.2.0')
+
+
+    // library to perform Network call to generate a meeting id
+    implementation 'com.android.volley:volley:1.2.1'
+
+    implementation 'live.videosdk:rtc-android-sdk:0.1.17'
+
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
+    implementation "com.airbnb.android:lottie:6.0.0"
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20"
+
+
+    // Add the dependency for the Firebase SDK for Google Analytics
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+
+}

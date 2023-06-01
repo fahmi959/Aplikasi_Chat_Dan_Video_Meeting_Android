@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="firebase_yellow">#FFCA28</color>
+    <color name="firebase_amber">#FFA000</color>
+    <color name="firebase_orange">#F57C00</color>
+    <color name="firebase_blue">#039BE5</color>
+    <color name="firebase_navy">#2C384A</color>
+    <color name="firebase_gray">#ECEFF1</color>
+    <color name="pink">#FEA1A1</color>
+
+    <!--reds-->
+    <color name="md_red_400">#FF5D5D</color>
+    <color name="md_red_500">#EF5350</color>
+
+    <!-- pinks -->
+
+    <!-- purples -->
+
+    <!-- deep purples -->
+
+    <!-- indigo -->
+
+    <!--blue-->
+
+    <!-- light blue-->
+
+    <!-- cyan -->
+
+    <!-- teal -->
+
+    <!-- green -->
+
+    <!--light green-->
+
+    <!-- lime-->
+
+    <!--yellow -->
+
+    <!--amber-->
+
+    <!--orange-->
+
+    <!--deep orange-->
+
+    <!--brown -->
+
+    <!--grey-->
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_700">#616161</color>
+
+    <!--blue grey-->
+    <color name="md_blue_grey_200">#B0BBC5</color>
+
+
+    <color name="md_grey_1000">#383838</color>
+    <color name="md_grey_200">#404B53</color>
+    <color name="md_grey_100A">#2B3034</color>
+    <color name="text_color">#9A9FA5</color>
+    <color name="md_grey_2000">#6F767E</color>
+
+
+    <color name="colorbackground">#354259</color>
+    <color name="colorPrimary">#5568FE</color>
+    <color name="colorPrimaryVariant">#1A1C22</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#FAFAFA</color>
+    <color name="transparentColor">#00000000</color>
+
+</resources>
